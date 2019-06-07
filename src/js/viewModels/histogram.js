@@ -24,7 +24,7 @@ define(['ojs/ojcore', 'knockout', 'jquery', 'text!../viewModels/data/boston_weat
       var data = JSON.parse(bostonData);
       $.each(data, function(i, item) {
         var year = item['Year'];
-        if (year === 2017) {
+        if (year === 2009) {
           hiTemps.push(item['High Temp (F)']);
           lowTemps.push(item['Low Temp (F)']);
         }
@@ -61,7 +61,7 @@ define(['ojs/ojcore', 'knockout', 'jquery', 'text!../viewModels/data/boston_weat
       var lineGroups = [];
       for (var i = 0; i<365; i++) {
           // https://codechi.com/dev-tools/date-to-millisecond-calculators/
-          lineGroups.push(new Date(1483246800000 + 86400000*i).toISOString());
+          lineGroups.push(new Date(1230786000000 + 86400000*i).toISOString());
       }
       self.lineSeriesValue = ko.observableArray(lineSeries);
       self.lineGroupsValue = ko.observableArray(lineGroups);
