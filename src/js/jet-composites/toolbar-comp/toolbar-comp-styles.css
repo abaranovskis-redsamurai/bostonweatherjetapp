@@ -1,0 +1,8 @@
+toolbar-comp:not(.oj-complete){
+  visibility: hidden;
+}
+
+toolbar-comp{
+	min-height: 50px;
+	width: 50px;
+}

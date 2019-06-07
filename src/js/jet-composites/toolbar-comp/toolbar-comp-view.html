@@ -1,0 +1,14 @@
+<!--
+  Copyright (c) 2015, 2019, Oracle and/or its affiliates.
+  The Universal Permissive License (UPL), Version 1.0
+-->
+<oj-label for="tb1" style="float:left;line-height:32px;padding-right:16px">
+    Year: 
+</oj-label>
+<oj-buttonset-one id="tb1" class="oj-buttonset-width-auto" aria-label="Choose only one setting." value="{{typeValue}}">
+    <!-- ko foreach: typeOptions -->
+    <oj-option value='[[value]]'>
+        <span data-bind="text: label"></span>
+    </oj-option>
+    <!-- /ko -->
+</oj-buttonset-one>

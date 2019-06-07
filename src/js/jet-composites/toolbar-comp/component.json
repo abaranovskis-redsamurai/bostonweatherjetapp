@@ -1,0 +1,32 @@
+{
+  "name": "toolbar-comp",
+  "version": "1.0.0",
+  "jetVersion": "^6.2.0",
+  "displayName": "A user friendly, translatable name of the pack.",
+  "description": "A translatable high-level description for the pack.",
+  "properties": {
+    "currentyear": {
+      "description": "Current year",
+      "type": "number",
+      "writeback": true
+    }
+  },
+  "methods": {
+
+  }, 
+  "events": {
+    "handleYear": {
+      "description": "Triggered when year is selected",
+      "bubbles": true,
+      "detail": {
+        "value": {
+          "description": "Selected year",
+          "type": "string"
+        }
+      }
+    }
+  }, 
+  "slots": {
+
+  }
+}
